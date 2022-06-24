@@ -1,8 +1,8 @@
 ---
-- hosts: all 
+- hosts: all
   become: yes
   tasks:
-  - name: Install tree on node
-    apt: 
+   - name: I want to install webserver.
+     apt:
       name: tree
-      state: present #if I don't want this tree make the state absent.
+      state: present
