@@ -1,0 +1,24 @@
+---
+- students:
+  - name: amit
+    phone no: 98989898
+    address: 
+     door no: 88 
+     street no: 2       # 1 Space notatition from hyphen
+     pincode: 2222
+
+
+  - name: avanti 
+    phone no: 89888988
+    address: 
+      door no: 88         # 2 Space notatition from hyphen
+      street no: 2
+      pincode: 2222
+
+
+  - name: Chandu
+    phone no: 88888888
+    address: 
+       door no: 88        # 3 Space notatition from hyphen
+       street no: 2
+       pincode: 2222
