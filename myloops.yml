@@ -2,11 +2,11 @@
 - hosts: 172.31.21.88
   become: yes
   tasks:
-   - name: I want to eecute multi packages
+   - name: I want to execute multi packages
      apt:
       name: "{{ item }}"
       state: present
-     loops:
+     loop:
       -git
       -tree
       -wget
