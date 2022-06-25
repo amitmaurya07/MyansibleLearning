@@ -2,3 +2,8 @@
 [mywebservers] #to group the hosts
 172.31.21.88
 172.31.5.66
+
+[mywebserver:vars]  #Group variables
+myvariable = value
+myawebackonubuntu = apache2
+mywebpackonredhat = httpd
