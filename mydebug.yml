@@ -4,10 +4,24 @@
   tasks: 
    - name: Execute Linux Commands
      command: hostname -f
-     register: myfirstaskresult
+     register: myfirstaskresult          # Providing variable to see full task result.
 
     
    - name: I want to see task result.
-     debug: 
+     debug:                                  # With tthe help of this you can see full task information.
        msg: "{{myfirstaskresult}}" 
+     
+
+   - name: Install git.
+     apt: 
+      name: git
+      state: present
+     when: myfirstaskresult.stderr ==""
+
+    
+   - name: Install tree
+     apt:
+      name: tree 
+      state: present
+     when: myfirstaskresult.stderr !=""
      
