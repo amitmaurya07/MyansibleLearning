@@ -3,7 +3,3 @@
 172.31.21.88
 172.31.5.66
 
-[mywebservers:vars]  #Group variables
-myvariable = value
-myawebackonubuntu = apache2
-mywebpackonredhat = httpd
