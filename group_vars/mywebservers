@@ -4,3 +4,4 @@ myvariable: value               # syntax for group variables
 myawebackonubuntu: apache2
 mywebpackonredhat: httpd
 myjavapackageonubuntu: openjdk-8-jre
+myjavapackageonredhat: java-1.8.0-openjdk
