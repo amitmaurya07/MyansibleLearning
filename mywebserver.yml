@@ -1,5 +1,5 @@
 ---
-- hosts: mywebservers
+- hosts: mywebservers #running specific IP hosts
   become: yes
   tasks:
    - name: I want to install webserver.
