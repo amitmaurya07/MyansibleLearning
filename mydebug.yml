@@ -3,5 +3,5 @@
   become: yes
   tasks: 
    - name: Execute Linux Commands
-     command: hostaname -f
+     command: hostname -f
      
