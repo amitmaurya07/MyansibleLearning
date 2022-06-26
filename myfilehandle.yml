@@ -8,12 +8,12 @@
      copy:
       src: mystatic 
       dest: /home/ubuntu/mystaticfile
+     notify: restartwebserver
 
    - name: I want to install webserver.
      apt:
       name: apache2
       state: present
-      notify: restartwebserver
 
    - name: Copy dynamic file into node server.
      template: 
