@@ -13,8 +13,22 @@
      apt:
       name: apache2
       state: present
+      notify: restartwebserver
 
    - name: Copy dynamic file into node server.
      template: 
        src: myindexfile.j2
        dest: /var/www/html/index.html
+
+  # - name: Download files from internet.
+    # get_url:
+     #  url: 
+      # dest:
+       # force_basic_auth: yes
+
+  handlers:                                 # to execute same tasks n number times just use handler.
+   - name: restartwebserver
+     service:
+      name: apache 2
+      state: restarted
+     
