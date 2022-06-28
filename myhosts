@@ -3,11 +3,11 @@
 172.31.21.88
 172.31.5.66
 
+[myappservers]
+172.31.4.66
+
 [testgroup] #for explanation
 server01 java8 
 server02 java8
 server03 java8 
 server04 java8
-
-[myappservers]
-172.31.4.66 
