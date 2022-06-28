@@ -10,4 +10,4 @@ server03 java8
 server04 java8
 
 [myappservers]
-'172.31.4.66 
+172.31.4.66 
