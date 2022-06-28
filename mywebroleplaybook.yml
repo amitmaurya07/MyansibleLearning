@@ -1,5 +1,5 @@
 ---
-- hosts : 172.31.21.88
+- hosts : 172.31.21.88            # to execute webrole create playbook.
   become: yes
   roles:
    - {role: mywebrole , when: ansible_os_family=="Debian"}

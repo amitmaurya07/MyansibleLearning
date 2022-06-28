@@ -1,0 +1,18 @@
+- name: Download tomcat tar file
+  get_url:
+    url: https://downloads.apache.org/tomcat/tomcat-10/v10.0.22/bin/apache-tomcat-10.0.22.tar.gz
+    dest: /home/ubuntu/apache-tomcat-10.0.22.tar.gz
+    force_basic_auth: yes
+
+
+- name: Create a folder.
+  file:
+    path: /opt/tomcat
+    state: directory
+
+
+# if you use linux command directly as an admin we are to provide IDEMPOTENTS.    
+- name: Extract tomcat tar file.
+  command: 
+    cmd: sudo tar xzvf /home/ubuntu/apache-tomcat-10.0.22.tar.gz -C /opt/tomcat --strip-components=1
+    creates: /opt/tomcat/NOTICE

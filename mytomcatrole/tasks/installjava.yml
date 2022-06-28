@@ -1,0 +1,10 @@
+---
+- name: Update packages
+  apt:
+    update_cache: yes
+
+- name: Install openjdk
+  apt:
+   name: install openjdk-8-jre
+   state: present
+  
